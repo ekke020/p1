@@ -167,8 +167,6 @@ svg {
     display: none;
     font-size: 30px;
     font-weight: bold;
-    /* -webkit-animation: fadein var(--fadein-speed);
-    animation: fadein var(--fadein-speed); */
   }
 
   .navbar:hover {

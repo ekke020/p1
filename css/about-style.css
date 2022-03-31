@@ -32,7 +32,8 @@ main {
   padding: 2rem 0;
 }
 
-h1 {
+h1,
+h2 {
   font-family: 'roboto_slabregular';
   text-align: center;
   color: var(--text-primary);
@@ -44,6 +45,10 @@ h1 {
   margin-top: 1rem;
 }
 
+.content-history {
+  color: white;
+  text-align: center;
+}
 .personel {
   list-style-type: none;
   text-align: center;
@@ -80,7 +85,7 @@ h1 {
   font-style: bold;
 }
 
-.person-frame h2 {
+.person-frame h3 {
   color: white;
   border-bottom: 2px solid white;
   width: 50%;
