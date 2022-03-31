@@ -1,0 +1,137 @@
+:root {
+  color: white;
+  font-family: 'fira_codelight';
+}
+
+@font-face {
+  font-family: 'fira_codelight';
+  src: url('../fonts/fira-code.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_slabregular';
+  src: url('../fonts/robotoslab.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #06070d;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 1rem;
+  padding: 2rem 0;
+}
+
+h1 {
+  font-family: 'roboto_slabregular';
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.section h2 {
+  font-family: 'roboto_slabregular';
+}
+
+.section p {
+  margin: 1rem 1rem;
+}
+
+.section li span {
+  font-style: italic;
+}
+
+#frequent-questions {
+  padding: 0;
+  list-style: none;
+}
+
+#frequent-questions li {
+  border: solid 1px white;
+  margin-bottom: 1rem;
+}
+
+.question {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.answer {
+  display: none;
+}
+
+.textFrame {
+  display: flex;
+}
+
+#textArea {
+  resize: none;
+  width: 100%;
+  background-color: #06070d;
+  border: solid 1px white;
+  color: white;
+  margin: 1rem;
+}
+#textArea::-webkit-scrollbar {
+  width: 3px;
+}
+
+#textArea::-webkit-scrollbar-track {
+  background: #06070d;
+}
+
+#textArea::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #b6b6b6;
+}
+
+#applicationForm {
+  margin: 0 1rem;
+}
+
+#emailField {
+  background-color: #06070d;
+  color: white;
+  border: 1px solid #b6b6b6;
+}
+
+#submitButton {
+  background-color: #06070d;
+  color: white;
+  border: 1px solid #b6b6b6;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 15rem;
+    padding: 1rem;
+  }
+  .section p {
+    width: 50%;
+  }
+  .inquiry {
+    width: 50%;
+  }
+  .textFrame {
+    width: 50%;
+  }
+  .contact-header {
+    display: inline-block;
+  }
+}

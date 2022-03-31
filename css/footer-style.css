@@ -1,0 +1,54 @@
+root {
+  --svg-fill-color: #b6b6b6;
+  --text-primary: #ececec;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 2rem;
+  margin-top: auto;
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links a svg {
+  width: 2rem;
+  fill: #b6b6b6;
+  margin: 0 0.3rem;
+}
+
+.links a svg:hover {
+  fill: #e8d8d1;
+}
+
+.inline-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rm;
+}
+
+.list-item {
+  padding: 0 0.5rem;
+}
+.list-item:not(:last-child) {
+  border-right: 1px solid grey;
+}
+.list-item:not(:first-child) {
+  border-left: 1px solid grey;
+}
+.list-item a {
+  color: var(--text-primary);
+}

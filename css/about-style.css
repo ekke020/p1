@@ -1,0 +1,99 @@
+root {
+  color: white;
+  --svg-fill-color: #b6b6b6;
+  --text-primary: #ececec;
+}
+
+@font-face {
+  font-family: 'fira_codelight';
+  src: url('../fonts/fira-code.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_slabregular';
+  src: url('../fonts/robotoslab.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #06070d;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 1rem;
+  padding: 2rem 0;
+}
+
+h1 {
+  font-family: 'roboto_slabregular';
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.content-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.personel {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.person-frame {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 1fr;
+}
+
+.person-frame img {
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  border: 2px solid #8d8dba;
+}
+
+.about-person {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.person-title p {
+  font-size: 25px;
+  font-style: bold;
+}
+
+.person-frame h2 {
+  color: white;
+  border-bottom: 2px solid white;
+  width: 50%;
+  margin-right: 1rem;
+}
+.about-person p {
+  color: white;
+  text-align: center;
+  margin: 1rem 1rem;
+}
+.about-person span {
+  font-style: italic;
+}
+
+@media screen and (min-width: 600px) {
+}
